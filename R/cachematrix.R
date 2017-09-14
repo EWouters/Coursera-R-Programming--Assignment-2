@@ -61,6 +61,7 @@ makeCacheMatrix <- function(x = matrix()) {
 #' @export cacheSolve
 #'
 #' @examples
+#' x <- makeCacheMatrix(matrix(rnorm(9), 3, 3))
 #' cacheSolve(x)
 #' cacheSolve(x)
 cacheSolve <- function(x, ...) {
