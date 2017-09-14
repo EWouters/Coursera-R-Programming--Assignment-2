@@ -62,8 +62,8 @@ makeCacheMatrix <- function(x = matrix()) {
 #'
 #' @examples
 #' x <- makeCacheMatrix(matrix(rnorm(9), 3, 3))
-#' cacheSolve(x)
-#' cacheSolve(x)
+#' cacheSolve(x) #Not cached
+#' cacheSolve(x) #Cached
 cacheSolve <- function(x, ...) {
     x.inv <- x$getInv()
     if (is.null(x.inv)) {

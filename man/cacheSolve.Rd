@@ -22,6 +22,6 @@ This function computes the inverse of the special
 }
 \examples{
 x <- makeCacheMatrix(matrix(rnorm(9), 3, 3))
-cacheSolve(x)
-cacheSolve(x)
+cacheSolve(x) #Not cached
+cacheSolve(x) #Cached
 }
